@@ -1,0 +1,46 @@
+nota= float(input('Nota: '))
+while nota < 0 or nota > 10 :
+    nota = float(input('Nota inválida, digite novamente: '))
+else :
+    print(f'nota final {nota}: ')
+
+
+usuario=input('Usuário: ')
+senha=input('Senha: ')
+while usuario == senha:
+    print('Senha deve ser diferente do Usuário')
+    usuario=input('Usuário: ')
+    senha=input('Senha: ')
+else:
+    print('Cadastro feito com sucesso')
+
+
+
+A = 80000
+B = 200000
+txa = 0.03
+txb = 0.015
+anos = 0
+while A <= B:
+    anos = anos + 1
+    A = A + A * txa
+    B = B + B * txb
+print(f'{anos} anos')
+
+
+n=int(input('N: '))
+a,b = 1,1
+cont = 1
+while cont <= n-2:
+    a,b = b, a+b
+    cont= cont + 1
+print (b)
+
+
+n1 = int(input('n: '))
+n2 = int(input('n: '))
+while n1 % n2 != 0:
+    n1, n2 = n2, n1 % n2
+print (n2)
+
+
